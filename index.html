@@ -36,7 +36,7 @@
         }
         var player = videojs('my-video')
         player.src({
-            src: "http://67.205.140.245/index.m3u8",
+            src: "https://spikewatch.app/index.m3u8",
             type: "application/x-mpegURL" 
         })
         player.on("ended", () => {
@@ -45,7 +45,7 @@
           player.removeAttribute('src')
           setTimeout(() => {
             player.src({
-                src: "http://67.205.140.245/index.m3u8",
+                src: "https://spikewatch.app/index.m3u8",
                 type: "application/x-mpegURL" 
             })
             player.load();
